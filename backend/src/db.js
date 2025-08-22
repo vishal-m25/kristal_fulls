@@ -1,0 +1,19 @@
+// src/db.js
+import mongoose from "mongoose";
+
+
+export const connectDB = async () => {
+  try {
+    await mongoose.connect(process.env.MONGODB_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });4
+    console.log("✅ MongoDB Connected");
+  } catch (err) {
+    console.error("❌ MongoDB connection error:", err.message);
+    process.exit(1);
+  }
+};
+
+// Optional: helper to get mongoose connection
+export const db = mongoose.connection;

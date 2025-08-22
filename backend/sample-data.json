@@ -1,0 +1,375 @@
+{
+  "bases": [
+    {
+      "_id": { "$oid": "66123456789abcdef0123451" },
+      "name": "Main Headquarters",
+      "location": "City Center",
+      "createdAt": { "$date": "2024-01-15T10:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "66123456789abcdef0123452" },
+      "name": "North Base",
+      "location": "Northern District",
+      "createdAt": { "$date": "2024-01-16T10:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "66123456789abcdef0123453" },
+      "name": "South Base",
+      "location": "Southern District",
+      "createdAt": { "$date": "2024-01-17T10:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "66123456789abcdef0123454" },
+      "name": "East Base",
+      "location": "Eastern District",
+      "createdAt": { "$date": "2024-01-18T10:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "66123456789abcdef0123455" },
+      "name": "West Base",
+      "location": "Western District",
+      "createdAt": { "$date": "2024-01-19T10:00:00Z" }
+    }
+  ],
+  
+  "equipment_types": [
+    {
+      "_id": { "$oid": "66223456789abcdef0123451" },
+      "name": "Laptops",
+      "category": "Electronics",
+      "description": "Portable computers for staff use",
+      "createdAt": { "$date": "2024-01-15T10:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "66223456789abcdef0123452" },
+      "name": "Projectors",
+      "category": "AV Equipment",
+      "description": "Presentation and display equipment",
+      "createdAt": { "$date": "2024-01-15T10:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "66223456789abcdef0123453" },
+      "name": "Chairs",
+      "category": "Furniture",
+      "description": "Office chairs for seating",
+      "createdAt": { "$date": "2024-01-15T10:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "66223456789abcdef0123454" },
+      "name": "Desks",
+      "category": "Furniture",
+      "description": "Workstation desks",
+      "createdAt": { "$date": "2024-01-15T10:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "66223456789abcdef0123455" },
+      "name": "Network Switches",
+      "category": "Networking",
+      "description": "Network connectivity equipment",
+      "createdAt": { "$date": "2024-01-15T10:00:00Z" }
+    }
+  ],
+  
+  "users": [
+    {
+      "_id": { "$oid": "66323456789abcdef0123451" },
+      "name": "John Smith",
+      "email": "john.smith@museum.org",
+      "password": "$2b$10$examplehashedpassword1234567890",
+      "role": "Admin",
+      "createdAt": { "$date": "2024-01-10T09:00:00Z" },
+      "updatedAt": { "$date": "2024-01-10T09:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "66323456789abcdef0123452" },
+      "name": "Sarah Johnson",
+      "email": "sarah.johnson@museum.org",
+      "password": "$2b$10$examplehashedpassword2345678901",
+      "role": "BaseCommander",
+      "createdAt": { "$date": "2024-01-11T09:00:00Z" },
+      "updatedAt": { "$date": "2024-01-11T09:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "66323456789abcdef0123453" },
+      "name": "Mike Chen",
+      "email": "mike.chen@museum.org",
+      "password": "$2b$10$examplehashedpassword3456789012",
+      "role": "LogisticsOfficer",
+      "createdAt": { "$date": "2024-01-12T09:00:00Z" },
+      "updatedAt": { "$date": "2024-01-12T09:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "66323456789abcdef0123454" },
+      "name": "Emily Davis",
+      "email": "emily.davis@museum.org",
+      "password": "$2b$10$examplehashedpassword4567890123",
+      "role": "Staff",
+      "createdAt": { "$date": "2024-01-13T09:00:00Z" },
+      "updatedAt": { "$date": "2024-01-13T09:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "66323456789abcdef0123455" },
+      "name": "David Wilson",
+      "email": "david.wilson@museum.org",
+      "password": "$2b$10$examplehashedpassword5678901234",
+      "role": "Staff",
+      "createdAt": { "$date": "2024-01-14T09:00:00Z" },
+      "updatedAt": { "$date": "2024-01-14T09:00:00Z" }
+    }
+  ],
+  
+  "assignments": [
+    {
+      "_id": { "$oid": "66423456789abcdef0123451" },
+      "base_id": { "$oid": "66123456789abcdef0123451" },
+      "equipment_type_id": { "$oid": "66223456789abcdef0123451" },
+      "assigned_to": "John Smith",
+      "assigned_to_idno": "EMP001",
+      "qty": 5,
+      "assigned_at": { "$date": "2024-02-01T10:00:00Z" },
+      "created_by": { "$oid": "66323456789abcdef0123451" }
+    },
+    {
+      "_id": { "$oid": "66423456789abcdef0123452" },
+      "base_id": { "$oid": "66123456789abcdef0123452" },
+      "equipment_type_id": { "$oid": "66223456789abcdef0123452" },
+      "assigned_to": "Sarah Johnson",
+      "assigned_to_idno": "EMP002",
+      "qty": 2,
+      "assigned_at": { "$date": "2024-02-02T11:00:00Z" },
+      "created_by": { "$oid": "66323456789abcdef0123452" }
+    },
+    {
+      "_id": { "$oid": "66423456789abcdef0123453" },
+      "base_id": { "$oid": "66123456789abcdef0123453" },
+      "equipment_type_id": { "$oid": "66223456789abcdef0123453" },
+      "assigned_to": "Mike Chen",
+      "assigned_to_idno": "EMP003",
+      "qty": 10,
+      "assigned_at": { "$date": "2024-02-03T12:00:00Z" },
+      "created_by": { "$oid": "66323456789abcdef0123453" }
+    },
+    {
+      "_id": { "$oid": "66423456789abcdef0123454" },
+      "base_id": { "$oid": "66123456789abcdef0123454" },
+      "equipment_type_id": { "$oid": "66223456789abcdef0123454" },
+      "assigned_to": "Emily Davis",
+      "assigned_to_idno": "EMP004",
+      "qty": 8,
+      "assigned_at": { "$date": "2024-02-04T13:00:00Z" },
+      "created_by": { "$oid": "66323456789abcdef0123454" }
+    },
+    {
+      "_id": { "$oid": "66423456789abcdef0123455" },
+      "base_id": { "$oid": "66123456789abcdef0123455" },
+      "equipment_type_id": { "$oid": "66223456789abcdef0123455" },
+      "assigned_to": "David Wilson",
+      "assigned_to_idno": "EMP005",
+      "qty": 3,
+      "assigned_at": { "$date": "2024-02-05T14:00:00Z" },
+      "created_by": { "$oid": "66323456789abcdef0123455" }
+    }
+  ],
+  
+  "purchases": [
+    {
+      "_id": { "$oid": "66523456789abcdef0123451" },
+      "base": { "$oid": "66123456789abcdef0123451" },
+      "equipmentType": { "$oid": "66223456789abcdef0123451" },
+      "qty": 20,
+      "unitCost": 1200.50,
+      "vendor": "Tech Supplies Inc.",
+      "purchasedAt": { "$date": "2024-01-20T09:00:00Z" },
+      "createdBy": { "$oid": "66323456789abcdef0123451" }
+    },
+    {
+      "_id": { "$oid": "66523456789abcdef0123452" },
+      "base": { "$oid": "66123456789abcdef0123452" },
+      "equipmentType": { "$oid": "66223456789abcdef0123452" },
+      "qty": 5,
+      "unitCost": 850.00,
+      "vendor": "AV Equipment Co.",
+      "purchasedAt": { "$date": "2024-01-21T10:00:00Z" },
+      "createdBy": { "$oid": "66323456789abcdef0123452" }
+    },
+    {
+      "_id": { "$oid": "66523456789abcdef0123453" },
+      "base": { "$oid": "66123456789abcdef0123453" },
+      "equipmentType": { "$oid": "66223456789abcdef0123453" },
+      "qty": 50,
+      "unitCost": 150.75,
+      "vendor": "Office Furniture Ltd.",
+      "purchasedAt": { "$date": "2024-01-22T11:00:00Z" },
+      "createdBy": { "$oid": "66323456789abcdef0123453" }
+    },
+    {
+      "_id": { "$oid": "66523456789abcdef0123454" },
+      "base": { "$oid": "66123456789abcdef0123454" },
+      "equipmentType": { "$oid": "66223456789abcdef0123454" },
+      "qty": 25,
+      "unitCost": 300.00,
+      "vendor": "Workstation Solutions",
+      "purchasedAt": { "$date": "2024-01-23T12:00:00Z" },
+      "createdBy": { "$oid": "66323456789abcdef0123454" }
+    },
+    {
+      "_id": { "$oid": "66523456789abcdef0123455" },
+      "base": { "$oid": "66123456789abcdef0123455" },
+      "equipmentType": { "$oid": "66223456789abcdef0123455" },
+      "qty": 10,
+      "unitCost": 450.25,
+      "vendor": "Network Gear Pro",
+      "purchasedAt": { "$date": "2024-01-24T13:00:00Z" },
+      "createdBy": { "$oid": "66323456789abcdef0123455" }
+    }
+  ],
+  
+  "stockmovements": [
+    {
+      "_id": { "$oid": "66623456789abcdef0123451" },
+      "base": { "$oid": "66123456789abcdef0123451" },
+      "equipmentType": { "$oid": "66223456789abcdef0123451" },
+      "qty": 20,
+      "movementType": "PURCHASE",
+      "refTable": "purchases",
+      "refId": { "$oid": "66523456789abcdef0123451" }
+    },
+    {
+      "_id": { "$oid": "66623456789abcdef0123452" },
+      "base": { "$oid": "66123456789abcdef0123452" },
+      "equipmentType": { "$oid": "66223456789abcdef0123452" },
+      "qty": 5,
+      "movementType": "PURCHASE",
+      "refTable": "purchases",
+      "refId": { "$oid": "66523456789abcdef0123452" }
+    },
+    {
+      "_id": { "$oid": "66623456789abcdef0123453" },
+      "base": { "$oid": "66123456789abcdef0123453" },
+      "equipmentType": { "$oid": "66223456789abcdef0123453" },
+      "qty": 50,
+      "movementType": "PURCHASE",
+      "refTable": "purchases",
+      "refId": { "$oid": "66523456789abcdef0123453" }
+    },
+    {
+      "_id": { "$oid": "66623456789abcdef0123454" },
+      "base": { "$oid": "66123456789abcdef0123454" },
+      "equipmentType": { "$oid": "66223456789abcdef0123454" },
+      "qty": 25,
+      "movementType": "PURCHASE",
+      "refTable": "purchases",
+      "refId": { "$oid": "66523456789abcdef0123454" }
+    },
+    {
+      "_id": { "$oid": "66623456789abcdef0123455" },
+      "base": { "$oid": "66123456789abcdef0123455" },
+      "equipmentType": { "$oid": "66223456789abcdef0123455" },
+      "qty": 10,
+      "movementType": "PURCHASE",
+      "refTable": "purchases",
+      "refId": { "$oid": "66523456789abcdef0123455" }
+    }
+  ],
+  
+  "tickets": [
+    {
+      "_id": { "$oid": "66723456789abcdef0123451" },
+      "visitorName": "Alice Brown",
+      "museumName": "National History Museum",
+      "date": { "$date": "2024-02-10T14:00:00Z" },
+      "price": 25.00,
+      "bookedBy": { "$oid": "66323456789abcdef0123451" },
+      "createdAt": { "$date": "2024-02-01T10:00:00Z" },
+      "updatedAt": { "$date": "2024-02-01T10:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "66723456789abcdef0123452" },
+      "visitorName": "Bob Johnson",
+      "museumName": "Art Gallery Downtown",
+      "date": { "$date": "2024-02-11T15:00:00Z" },
+      "price": 18.50,
+      "bookedBy": { "$oid": "66323456789abcdef0123452" },
+      "createdAt": { "$date": "2024-02-02T11:00:00Z" },
+      "updatedAt": { "$date": "2024-02-02T11:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "66723456789abcdef0123453" },
+      "visitorName": "Carol Williams",
+      "museumName": "Science Center",
+      "date": { "$date": "2024-02-12T16:00:00Z" },
+      "price": 22.00,
+      "bookedBy": { "$oid": "66323456789abcdef0123453" },
+      "createdAt": { "$date": "2024-02-03T12:00:00Z" },
+      "updatedAt": { "$date": "2024-02-03T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "66723456789abcdef0123454" },
+      "visitorName": "Daniel Miller",
+      "museumName": "Natural History Museum",
+      "date": { "$date": "2024-02-13T17:00:00Z" },
+      "price": 20.00,
+      "bookedBy": { "$oid": "66323456789abcdef0123454" },
+      "createdAt": { "$date": "2024-02-04T13:00:00Z" },
+      "updatedAt": { "$date": "2024-02-04T13:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "66723456789abcdef0123455" },
+      "visitorName": "Eva Garcia",
+      "museumName": "Modern Art Museum",
+      "date": { "$date": "2024-02-14T18:00:00Z" },
+      "price": 30.00,
+      "bookedBy": { "$oid": "66323456789abcdef0123455" },
+      "createdAt": { "$date": "2024-02-05T14:00:00Z" },
+      "updatedAt": { "$date": "2024-02-05T14:00:00Z" }
+    }
+  ],
+  
+  "transfers": [
+    {
+      "_id": { "$oid": "66823456789abcdef0123451" },
+      "base_id_from": { "$oid": "66123456789abcdef0123451" },
+      "base_id_to": { "$oid": "66123456789abcdef0123452" },
+      "equipment_type_id": { "$oid": "66223456789abcdef0123451" },
+      "qty": 3,
+      "transferred_at": { "$date": "2024-02-06T10:00:00Z" },
+      "created_by": { "$oid": "66323456789abcdef0123451" }
+    },
+    {
+      "_id": { "$oid": "66823456789abcdef0123452" },
+      "base_id_from": { "$oid": "66123456789abcdef0123452" },
+      "base_id_to": { "$oid": "66123456789abcdef0123453" },
+      "equipment_type_id": { "$oid": "66223456789abcdef0123452" },
+      "qty": 1,
+      "transferred_at": { "$date": "2024-02-07T11:00:00Z" },
+      "created_by": { "$oid": "66323456789abcdef0123452" }
+    },
+    {
+      "_id": { "$oid": "66823456789abcdef0123453" },
+      "base_id_from": { "$oid": "66123456789abcdef0123453" },
+      "base_id_to": { "$oid": "66123456789abcdef0123454" },
+      "equipment_type_id": { "$oid": "66223456789abcdef0123453" },
+      "qty": 5,
+      "transferred_at": { "$date": "2024-02-08T12:00:00Z" },
+      "created_by": { "$oid": "66323456789abcdef0123453" }
+    },
+    {
+      "_id": { "$oid": "66823456789abcdef0123454" },
+      "base_id_from": { "$oid": "66123456789abcdef0123454" },
+      "base_id_to": { "$oid": "66123456789abcdef0123455" },
+      "equipment_type_id": { "$oid": "66223456789abcdef0123454" },
+      "qty": 2,
+      "transferred_at": { "$date": "2024-02-09T13:00:00Z" },
+      "created_by": { "$oid": "66323456789abcdef0123454" }
+    },
+    {
+      "_id": { "$oid": "66823456789abcdef0123455" },
+      "base_id_from": { "$oid": "66123456789abcdef0123455" },
+      "base_id_to": { "$oid": "66123456789abcdef0123451" },
+      "equipment_type_id": { "$oid": "66223456789abcdef0123455" },
+      "qty": 1,
+      "transferred_at": { "$date": "2024-02-10T14:00:00Z" },
+      "created_by": { "$oid": "66323456789abcdef0123455" }
+    }
+  ]
+}
